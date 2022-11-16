@@ -1,0 +1,20 @@
+{
+  "carousel": [
+    {
+      "title": "Auto Diagnose",
+      "imgName": "car",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+    },
+    {
+      "title": "Free Fuel",
+      "imgName": "fuel",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+    },
+    {
+      "title": "Change tires",
+      "imgName": "tire",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+    }
+  ],
+  "applications": []
+}
