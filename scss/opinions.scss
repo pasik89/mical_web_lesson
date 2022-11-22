@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'mixins.scss';
+
+.opinions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        @include title-underline;
+    }
+    &__subtitle {
+        font-weight: normal;
+        margin-top: -10px;
+    }
+    
+    &__container {
+        display: flex;
+        width: 60%;
+        margin-top: 50px;
+
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin: 0 10px;
+            background-color: $color-of-footer;
+            color: $color-white;
+
+            &__img {
+                width: 20%;
+                padding: 15px 10px;
+            }
+
+            &__header {
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+
+
+            &__surname {   
+                color: $main-color;
+                margin-top: -10px;
+
+            }
+        }
+            &__comment {
+                color: darken($color: $color-white, $amount: 20%);
+            }
+
+        }
+    }
+
+        &__dots {
+            margin-top: 20px;
+
+            &__item {
+               color: $main-color;
+            }
+
+            .active {
+                color: $main-green;
+            }    
+    }
+}

@@ -1,0 +1,89 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid $border-color ;
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            @include title-underline;
+        }
+        
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // position: relative;
+
+        &__image {
+            width: 50%;
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            
+            }
+
+        &__text {
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            width: 30%;
+            text-align: justify;
+            color: lighten($color: $color-black, $amount: 25%);
+           
+        }
+
+        &__text::first-line {
+            font-size: 1.3rem;                
+        }
+
+        &__btn {
+            // position: absolute;
+            // bottom: 20%;
+            @include main-btn;
+        }
+    }
+}
+
+    &__what-we-do {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            @include title-underline;
+        }
+
+        &__subtitle {
+            margin-top: -10px;
+            font-size: 0.8rem;
+        }
+
+        &__image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 60%;
+            padding: 2%;
+            
+            &__item {
+                width: 40%;
+                padding: 1%;
+            }
+
+        }
+
+        &__btn {
+          @include main-btn;
+        }
+
+    }
+}

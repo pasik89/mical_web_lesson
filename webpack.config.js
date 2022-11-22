@@ -17,6 +17,9 @@ module.exports = {
       inject: 'body',
     })
   ],
+  experiments: {
+    topLevelAwait: true
+  },
   module: {
     rules: [
       {
