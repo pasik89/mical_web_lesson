@@ -1,0 +1,117 @@
+@import 'variables';
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: $color-of-footer;
+
+   &__container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    padding: 30px 0;
+
+    &__user-data {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+        &__title {
+            width: 50%;
+            color: $color-white;
+            border-bottom: 1px solid $border-color;
+            padding-bottom: 5px;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            &__item {
+                color: darken($color: $border-color, $amount: 30%);
+                border-bottom: 1px solid $border-color;
+                padding: 0 0 10px 10px;
+                font-size: 0.7rem;
+        }
+    
+        }
+
+        &__btn-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+
+            &__send {  
+                padding: 10px 30px;
+            }
+
+            &__media {                
+                &__link {                
+                    color: $color-white;
+                    font-size: 1.7rem;
+
+                }
+
+            }
+        }
+    }
+
+    &__web-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 50%;
+        padding-left: 20px;
+
+        &__map {
+            width: 90%;
+        }
+
+        &__icons {
+            width: 100%;
+            display: flex; 
+            justify-content: space-between;
+            
+            &__icon {
+                color: $color-white;
+                text-decoration: none;
+            }
+        }
+
+        &__newsletter-title {
+            color: $color-white;
+            align-self: flex-start;
+        }
+
+        &__newsletter {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &__btn {
+                background-color: $main-green;
+                color: $color-white;
+                padding: 5px 40px;
+                border: none;
+                cursor: pointer;
+            }
+
+            &__input {
+                border: none;
+                flex-grow: 2;
+            }
+        }
+    }
+}
+    &__footer {
+        padding: 15px 0;
+        width: 60%;
+        border-top: 1px solid darken($color: $color-white, $amount: 15%);
+        color: darken($color: $color-white, $amount: 15%);
+        text-align: center;
+       }
+
+}

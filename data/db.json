@@ -1,0 +1,35 @@
+{
+  "carousel": [
+    {
+      "title": "Auto Diagnose",
+      "imgName": "thr.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+    },
+    {
+      "title": "Free Fuel",
+      "imgName": "thr1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+    },
+    {
+      "title": "Change tires",
+      "imgName": "thr2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim eget lorem consequat, eget."
+    }
+  ],
+  "applications": [
+    {
+      "fullName": "sada",
+      "email": "dsasda",
+      "phoneNumber": "asdas",
+      "message": "asd",
+      "id": 1
+    },
+    {
+      "fullName": "af",
+      "email": "af",
+      "phoneNumber": "ag",
+      "message": "ag",
+      "id": 2
+    }
+  ]
+}

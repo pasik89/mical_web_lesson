@@ -1,0 +1,20 @@
+@import 'variables.scss';
+
+@mixin main-btn {
+    color: $color-white;
+    background-color: $color-black;
+    padding: 10px 30px;
+    border-radius: 50%;
+}
+
+@mixin title-underline {
+    padding: 5px 30px;
+    border-bottom: 1px solid $main-color;
+}
+
+@mixin main-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

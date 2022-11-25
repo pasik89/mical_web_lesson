@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Mical</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,30 +14,268 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+  <script src="https://kit.fontawesome.com/b32a079d69.js" crossorigin="anonymous"></script>
+
 </head>
-
 <body>
+<!-- Add your site or application content here -->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
+<header class="header">
+  <div class="header__logo">
+    <img class="header__logo__image" src="img/logo.png" alt="logo">
+  </div>
+  <nav class="header__navigation">
+    <ul class="header__navigation__menu"> 
+      <li class="header__navigation__menu__item">Home</li>
+      <li class="header__navigation__menu__item">About</li>
+      <li class="header__navigation__menu__item">Furnitures</li>
+      <li class="header__navigation__menu__item">Testimonial</li>
+      <li class="header__navigation__menu__item">Contact Us</li>
+      <li class="header__navigation__menu__item"><i class="fa-solid fa-user"></i> Register/Login</li>
+      <li class="header__navigation__menu__item"><i class="fa-solid fa-magnifying-glass"></i></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="break"></div>
+
+<section class="welcome-section">
+  <div class="welcome-section__info">
+      <h1 class="welcome-section__title">Welcome</h1>
+      <h2 class="welcome-section__subtitle">Car repair services</h2>
+      <p class="welcome-section__info-paragraph">
+         Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, 
+         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim, 
+         quis nostrud nisi ut aliquip ex ea.
+    </p>
+    <div class="welcome-section__button-container">
+        <button class="welcome-section__button">More info</button>
+        <button class="welcome-section__button">Contact us</button>
+    </div>
+  </div>
+  <div class="welcome-section__image-container">
+      <img class = "welcome-section__image" src="img/car.png" alt="car">
+  </div>
+</section>
+
+<section class="carousel-section">
+  <div class="carousel-section__container">
+    <button class="carousel-section__container__btn">></button>
+  </div>
+</section>
+
+<section class="main">
+  <article class="main__about">
+    <h3 class="main__about__title">About Our Car Service</h3>
+    <div class="main__about__content">
+      <img class="main__about__content__image" src="img/about.png" alt="frame"/>
+      <p class="main__about__content__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ipsa laborum quisquam quam eaque, quia obcaecati voluptas architecto quos iure illum perferendis doloribus culpa excepturi molestiae ut deserunt fugit a! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate illo vel iusto explicabo tempora iure, eum nostrum inventore delectus sequi sunt amet minima aliquam temporibus reprehenderit fuga necessitatibus cupiditate. Quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quo voluptatem repellat possimus eveniet repudiandae optio quas illum.</p>
+      <button class="main__about__content__btn">Read me</button>
+    </div>
+  </article>
+  <div class="main__what-we-do">
+    <h3 class="main__what-we-do__title">What We Do</h3>
+    <h4 class="main__what-we-do__subtitle">It is a long established fact that a reader will be distracted by the</h4>
+    <div class="main__what-we-do__image-container">
+      <img class="main__what-we-do__image-container__item" src="img/img1.png"/>
+      <img class="main__what-we-do__image-container__item" src="img/img2.png"/>
+      <img class="main__what-we-do__image-container__item" src="img/img3.png"/>
+      <img class="main__what-we-do__image-container__item" src="img/img4.png"/>
+    </div>
+    <button class="main__what-we-do__btn">See More</button>
+  </div>
+</section>
+
+<section class="opinions">
+  <h3 class="opinions__title">Testimonial</h3>
+  <h4 class= "opinions__subtitle">It is a long established fact that a reader will be distracted by the</h4>
+  <div class="opinions__container">
+    <div class="opinions__container__box"> 
+      <img class="opinions__container__box__img" src="img/tes.jpg" alt="client" />
+      <div class="opinions__container__box__header">
+        <h5 class="opinions__container__box__header__name">JCKOLO</h5>
+        <h6 class="opinions__container__box__header__surname">(It is a long)</h6>
+      </div>
+      <p class="opinions__container__box__comment">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+    </div>
+    <div class="opinions__container__box"> 
+      <img class="opinions__container__box__img" src="img/tes1.jpg" alt="client" />
+      <div class="opinions__container__box__header">
+        <h5 class="opinions__container__box__header__name">ROCOYO</h5>
+        <h6 class="opinions__container__box__header__surname">(It is a long)</h6>
+      </div>
+      <p class="opinions__container__box__comment">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+    </div>
+    </div>
+   
+  <div class="opinions__dots">
+    <i class="opinions__dots__item fa-sharp fa-solid fa-circle active"></i>
+    <i class="opinions__dots__item fa-sharp fa-solid fa-circle"></i>
+    <i class="opinions__dots__item fa-sharp fa-solid fa-circle"></i>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="contact__container">
+    <div class="contact__container__user-data">
+      <h3 class="contact__container__user-data__title">Contact Us</h3>
+
+      <form class="contact__container__user-data__form" id="contactForm">
+        <input class="contact__container__user-data__form__item" placeholder="Full name" name="fullName">/>
+        <input class="contact__container__user-data__form__item" placeholder="Email" name="email">/>
+        <input class="contact__container__user-data__form__item" placeholder="Phone number" name="phoneNumber">/>
+        <input class="contact__container__user-data__form__item" placeholder="Message" name="message">/>
+
+        <div class="contact__container__user-data__btn-container">
+          <button class="contact__container__user-data__btn-container__send">SEND</button>
+          <div class="contact__container__user-data__btn-container__media">
+            <a class="contact__container__user-data__btn-container__media__link" href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+            <a class="contact__container__user-data__btn-container__media__link" href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+            <a class="contact__container__user-data__btn-container__media__link" href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="contact__container__user-data__btn-container__media__link" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+        </div>
+  
+        
+
+      </form>
+
+ 
+    </div>
+    <div class="contact__container__web-data">
+      <div class="contact__container__web-data__icons">
+        <a class="contact__container__web-data__icons__icon" href="#">Location <i class="fa-solid fa-location-dot" ></i></a>
+        <a class="contact__container__web-data__icons__icon" href="#">+00 123 456 789 <i class="fa-solid fa-phone-volume"></i></a>
+        <a class="contact__container__web-data__icons__icon" href="#">mical@gmail.com <i class="fa-sharp fa-solid fa-envelope"></i></a>
+      </div>
+      <img class="contact__container__web-data__map" src="img/map.jpg" alt="map"/>
+      <p class="contact__container__web-data__newsletter-title">Newsletter</p>
+      <div class="contact__container__web-data__newsletter">
+        <input class="contact__container__web-data__newsletter__input"></input>
+        <button class="contact__container__web-data__newsletter__btn">SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+  <footer class="contact__footer">Copyright 2022 All Right Reserved By Free html Templates</footer>
+  
+</section>
+
+
+<!-- <main-header></main-header>
+
+<div class="black"></div> -->
+
+<!-- <section class = "welcome">
+  <h1>Welcome</h1>
+  <h2>Car repair services</h2>
+  <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim, quis nostrud nisi ut aliquip ex ea.</p>
+  <button>More info</button>
+  <button>Contact us</button>
+  <img class = "car" src="img/car.png">
+</section> -->
+
+<!-- <section class = "features clearfix">
+    <div class="feature">
+      <h4>Auto diagnose</h4>
+      <img src="img/thr.png">
+      <p class="descrip">Lorem ipsum dolor sit quis aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="feature">
+      <h4>Auto diagnose</h4>
+      <img src="img/thr1.png">
+      <p class="descrip">Lorem ipsum doitation nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="feature">
+      <h4>Auto diagnose</h4>
+      <img src="img/thr2.png">
+      <p class="descrip">Lorem ipsum dolor sit amet, c magna aliqua. Ut enim ad minim veniam.</p>
+    </div>
+    <button class = "arrow"><p>></p></button>
+
+
+  </section>
+
+<main>
+  <section class = "about">
+    <h2>About Our Car Services</h2>
+    <div>
+      <img src="img/about.png">
+      <h4>Dolor sit amet, consectetus adipiscing elit, </h4>
+      <p>lorem ipsum dolor sit amet, dipiscin sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, sed do eiusmod tempor incididunt ut labore  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <button>Read More</button>
+
+    </div>
+  </section>
+  <section class = "we-do">
+    <h2>What We Do</h2>
+    <p>It is a long established fact that a reader will be distracted by the</p>
+    <div class = "images">
+      <img src="img/img1.png">
+      <img src="img/img2.png">
+      <img src="img/img3.png">
+      <img src="img/img4.png">
+    </div>
+    <button class= "see-more">See more</button>
+  </section>
+  <section class= "testimonial">
+    <h2>Testimonial</h2>
+    <p>It is a long established fact that a reader will be distracted by the</p>
+    <div class="jckolo">
+      <img src="img/tes.jpg">
+      <h6>JCKOLO</h6>
+      <p class="subtitle">(It is a long )</p>
+      <p class="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point uf using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+    </div>
+    <div class="rokoyo">
+      <img src="img/tes1.jpg">
+      <h6>ROKOYO</h6>
+      <p class="subtitle">(It is a long )</p>
+      <p class="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point uf using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+    </div>
+    <div class="loading">
+      <i class="fa-solid fa-circle"></i>
+      <i class="fa-solid fa-circle"></i>
+      <i class="fa-solid fa-circle"></i>
+    </div>
+  </section>
+  <section class= "contact">
+    <h3>Contact us</h3>
+    <div class="items">
+      <a><i class="fa-solid fa-location-dot"></i>Location</a>
+      <a><i class="fa-solid fa-phone-volume"></i>+48 928 374 168</a>
+      <a><i class="fa-solid fa-envelope"></i>mical_autoservice@gmail.com</a>
+    </div>
+    <img src="img/map.jpg">
+    <p>Full Name</p>
+    <p>Email</p>
+    <p>Phone Number</p>
+    <p>Message</p>
+    <button class = "send">Send</button>
+    <div class="socials">
+      <i class="fa-brands fa-square-facebook"></i>      <i class="fa-brands fa-square-twitter"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+    </div>
+    <div class="newsletter">
+      <p>Enter your email</p>
+      <p>Subscribe</p>
+    </div>
+    <footer>Copyright 2019 all right reserved by free html templates</footer>
+
+  </section> -->
+
+<!--  <footer>Copyright 2019 all right reserved by free html templates</footer>-->
+
+</main>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

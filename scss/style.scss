@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    // height: 500vh;
+}
+
+.break {
+    background: #000;
+    height: 10px; 
+}
+
+@import 'navigation.scss';
+@import 'header.scss';
+@import 'carousel.scss';
+@import 'main.scss';
+@import 'opinions.scss';
+@import 'contact.scss'

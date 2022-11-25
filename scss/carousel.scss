@@ -1,0 +1,49 @@
+@import 'variables.scss';
+
+.carousel-section {
+    position: relative;
+
+    &__container {
+    max-width: 60%;
+    margin: 0 auto;
+
+        &__btn {
+        position: absolute;
+        top: 0;
+        right: 16%;
+        width: 3vw;
+        height: 3vw;
+        margin: auto;
+        cursor: pointer;
+        background: $color-white;
+        border-radius: 50%;
+        border: $color-white;
+        font-size: 1.5rem;
+    }
+
+        &__list {
+            display: flex;
+            margin-top: -8%;
+
+          &__item {
+            list-style: none;
+            text-align: center;
+            box-shadow: 0 0 20px 2px $border-color;
+            background: $color-white;
+            margin: 0 2%;
+            padding: 10px 4px;
+
+              &__title{
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+
+            &__paragraph{ 
+                text-transform: lowercase;
+                color: lighten($color: $color-black, $amount: 50%);
+
+            }
+        }
+    }
+}
+}

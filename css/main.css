@@ -262,3 +262,447 @@ textarea {
   }
 }
 
+
+/*AGATA*/
+/*MENU*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*background-color: black;*/
+}
+
+nav {
+  text-align: right;
+  background-image: linear-gradient(#4574e9, #7fa1ec);
+}
+
+
+nav > a, i {
+  font-size: 14px;
+  color: rgba(253, 253, 254, 0.89);
+  transition: .2s;
+}
+
+nav > a {
+  display: inline-block;
+  padding: 18px;
+  font-family: "Calibri", sans-serif;
+  letter-spacing: 1px;
+}
+
+a > img {
+  margin-right: 30vw;
+  width: 100px;
+
+}
+
+nav a:hover, i:hover {
+  color: #51fd44;
+}
+
+nav > a > i {
+  padding: 10px;
+  margin: auto;
+}
+
+div.black {
+  background-color: black;
+  width: 100%;
+  height: 5vh;
+}
+
+/*Header*/
+
+section.welcome {
+  position: relative;
+  margin-top: -22px;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  color: #fdfdfe;
+  height: 60vh;
+  background-image: url(../img/banner.jpg);
+}
+
+img.car {
+  width: 40%;
+  position: absolute;
+  right: 2vw;
+  top: 5vh;
+}
+
+h1, h2, p, img.car, button {
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h1{
+  color: #51fd44;
+  padding-top: 20px;
+}
+section.welcome > p {
+  font-size: 12px;
+  margin-top: 10px;
+  max-width: 60%;
+}
+button {
+  background-color: rgba(253, 253, 254, 0.89);
+  font-family: sans-serif;
+  font-size: 12px;
+  padding: 10px 15px;
+  margin: 20px 5px;
+  border: none;
+  text-transform: uppercase;
+}
+
+
+/*Sekcja Features*/
+section.features {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.features h4 {
+  color: black;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 20px 5px 5px;
+  font-family: "Roboto Light", sans-serif;
+}
+
+div.feature {
+  z-index: 999;
+  height: 170px;
+  background-color: white;
+  color: darkgrey;
+  float: left;
+  font-size: 14px;
+  text-align: center;
+  margin: -40px 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px grey;
+  padding: 5px -10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+}
+div.feature > img {
+  display: flex;
+}
+
+button.arrow {
+  position: absolute;
+  right: 16%;
+  bottom: 22%;
+  border-radius: 45px;
+  height: 35px;
+  width: 35px;
+}
+
+button.arrow > p {
+  line-height: 17px;
+  margin: 0 3px 0 0 ;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*Main*/
+
+main {
+  padding: 100px 0;
+}
+
+main > section > h2 {
+  color: black;
+  text-transform: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration-line: underline;
+  text-decoration-color: #4574e9;
+  margin: 10px 0;
+}
+
+main > section > p {
+  background: white;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/*Main - section about*/
+
+section.about > div {
+  position: absolute;
+}
+
+
+div > img {
+  margin-top: 2%;
+  width: 40%;
+  position: relative;
+  left: 30%;
+
+}
+section.about > div > button, button.see-more {
+  font-family: sans-serif;
+  border: 2px solid black;
+  border-radius: 45px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-transform: none;
+  width: 100px;
+  font-size: 10px;
+
+}
+
+section.about > div > h4 {
+  font-family: "Roboto Light", sans-serif;
+  color: #4f4e4e;
+  font-weight: normal;
+  position: absolute;
+  top: 28%;
+  left: 38%;
+}
+
+section.about > div > p {
+  position: absolute;
+  top: 36%;
+  left: 36%;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 70%;
+  color: #383838;
+  width: 26%;
+  text-align: justify;
+  margin: 0 10px;
+}
+section.about > div > button {
+  position: absolute;
+  bottom: 14%;
+  left: 46%;
+}
+
+/*Main-section What we do*/
+section.we-do {
+  border-bottom: 1px solid rgb(189, 188, 188);
+}
+
+section.we-do > h2 {
+  margin-top: 400px;
+}
+
+.we-do > p {
+  font-weight: bold;
+}
+
+div.images {
+  margin: 50px 142px 0;
+  width: 55%;
+}
+
+button.see-more {
+  margin: 50px 580px;
+}
+
+
+/*Section testimonial*/
+
+div.jckolo, div.rokoyo {
+  float: left;
+  justify-content: space-between;
+  width: 28%;
+  height: 200px;
+  background-color: #17122b;
+  padding: 15px 12px;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+
+div.jckolo {
+  margin-left: 21.3%;
+}
+
+div.jckolo > img, div.rokoyo > img {
+  position: relative;
+  width: 20%;
+  left: 0%;
+}
+div.jckolo > h6, p.subtitle, p.description, div.rokoyo > h6, p.subtitle, p.description {
+  color: rgba(245, 245, 245, 0.94);
+  font-family: Calibri;
+  font-size: 15px;
+  position: relative;
+  top: -35%;
+  left: 25%;
+}
+
+div.jckolo > p.subtitle, div.rokoyo > p.subtitle {
+  color: #304f9d;
+  font-size: 13px;
+}
+
+div.jckolo > p.description, div.rokoyo > p.description {
+  top: -10%;
+  left: 0%;
+  padding: 0 5px;
+  font-size: 13px;
+}
+
+div.loading {
+  margin: 300px auto 0;
+  text-align: center;
+}
+
+div.loading > i {
+  color: #4574e9;
+}
+div.loading > i:first-child {
+  color: #51fd44;
+}
+
+/*section contact us*/
+
+.contact {
+  position: absolute;
+  margin-top: 80px;
+  height: 70vh;
+  width: 100%;
+  background-color: #14172a;
+
+
+}
+
+section.contact > img {
+  height: 50%;
+  position: relative;
+  top: 0%;
+  left: 51%;
+}
+
+section.contact > div.items > a {
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+section.contact > div.items > a > i {
+  padding: 20px 10px;
+}
+
+section.contact > div.items {
+  position: relative;
+  top: 2%;
+  text-align: right;
+  right: 22%;
+
+}
+section.contact > h3 {
+  position: relative;
+  top: 14%;
+  left: 22%;
+  color: white;
+  height: 10%;
+  width: 18%;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+}
+
+section.contact > p {
+  position: relative;
+  bottom: 50%;
+  left: 22%;
+  background-color: #14172a;
+  color: rgba(211, 211, 211, 0.77);
+  text-align: left;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.77);
+  width: 26%;
+  margin: 7px 0;
+  padding: 10px 0;
+  font-size: 10px;
+  font-family: sans-serif;
+  text-indent: 3%;
+}
+
+button.send {
+  position: relative;
+  bottom: 40%;
+  left: 22%;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+  width: 70px;
+  height: 30px;
+  color: black;
+  font-family: Calibri, sans-serif;
+  font-size: 12px;
+}
+
+div.socials {
+  position: relative;
+  bottom: 51%;
+  text-align: center;
+  right: 7%;
+}
+
+div.socials > i {
+  font-size: 25px;
+}
+
+div.newsletter {
+  position: relative;
+  bottom: 60%;
+  left: 50%;
+  box-sizing: content-box;
+  display: flex;
+  width: 28%;
+  flex-basis: 60%;
+  font-size: 14px;
+}
+
+div.newsletter > p:first-child{
+  flex-basis: 70%;
+  font-family: sans-serif;
+  color: rgb(120, 120, 120);
+  text-indent: 5%;
+  background-color: whitesmoke;
+  padding: 7px 30px;
+}
+
+
+div.newsletter > p:nth-child(2){
+  background-color: greenyellow;
+  text-transform: uppercase;
+  flex-basis: 40%;
+  text-align: center;
+  font-family: sans-serif;
+  color: whitesmoke;
+  padding: 7px 30px;
+
+}
+
+
+/*stopka*/
+
+footer{
+  position: relative;
+  bottom: 50%;
+  font-family: Roboto Light, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: #14172a;
+  color: lightgrey;
+  padding: 10px 0;
+  border-top: 1px solid rgba(211, 211, 211, 0.76);
+}
