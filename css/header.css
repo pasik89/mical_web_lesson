@@ -1,0 +1,32 @@
+.welcome-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 20px 40px;
+  background: url("../img/banner.jpg");
+}
+.welcome-section__image {
+  max-width: 100%;
+}
+.welcome-section__info {
+  color: #fff;
+}
+.welcome-section__subtitle {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.welcome-section__title {
+  text-transform: uppercase;
+  color: #69F810;
+  font-size: 2rem;
+}
+.welcome-section__button {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+}/*# sourceMappingURL=header.css.map */

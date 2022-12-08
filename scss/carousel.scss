@@ -36,14 +36,14 @@
               &__title{
                 text-transform: uppercase;
                 font-weight: normal;
-            }
+                }
 
             &__paragraph{ 
                 text-transform: lowercase;
                 color: lighten($color: $color-black, $amount: 50%);
 
+                }
             }
         }
-    }
-}
+    }   
 }

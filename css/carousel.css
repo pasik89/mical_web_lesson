@@ -1,0 +1,43 @@
+.carousel-section {
+  position: relative;
+}
+.carousel-section__container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.carousel-section__container__btn {
+  position: absolute;
+  top: 0;
+  right: 16%;
+  width: 3vw;
+  height: 3vw;
+  margin: auto;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+  border: #fff;
+  font-size: 1.5rem;
+}
+.carousel-section__container__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -8%;
+}
+.carousel-section__container__list__item {
+  list-style: none;
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px 2px #BCBCBC;
+          box-shadow: 0 0 20px 2px #BCBCBC;
+  background: #fff;
+  margin: 0 2%;
+  padding: 10px 4px;
+}
+.carousel-section__container__list__item__title {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.carousel-section__container__list__item__paragraph {
+  text-transform: lowercase;
+  color: gray;
+}/*# sourceMappingURL=carousel.css.map */

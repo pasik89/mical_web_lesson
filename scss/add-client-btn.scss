@@ -1,0 +1,21 @@
+@import 'variables.scss';
+
+.client-list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+
+    &__add-button {
+        @include main-btn;
+    }
+
+    &__table {
+        margin-top: 10px;
+        width: 40%;
+        text-align: center;
+
+    }
+}

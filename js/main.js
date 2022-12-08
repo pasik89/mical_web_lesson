@@ -3,6 +3,7 @@ import "../css/normalize.css";
 import "../scss/style.scss";
 import "../img/index"
 import {httpPost} from './postHttp.js';
+import {httpGet} from './http'
 
 class Header extends HTMLElement {
   constructor() {
@@ -26,8 +27,6 @@ class Header extends HTMLElement {
 
 customElements.define('main-header', Header);
 
-import { httpGet } from "./http";
-
 
 // async function getCarouselData() {
 //   try {
@@ -42,8 +41,7 @@ import { httpGet } from "./http";
 // getCarouselData()
 
 const carouselContainer = document.querySelector('.carousel-section__container');
-const carouselList = document
-  .createElement('ul');
+const carouselList = document.createElement('ul');
 carouselContainer.appendChild(carouselList);
 carouselList.classList.add('carousel-section__container__list')
 
@@ -51,7 +49,7 @@ const carouselItems = await httpGet('carousel');
 
 carouselItems.forEach(carouselItem => {
 
-  console.log(carouselItem)
+  // console.log(carouselItem)
   const carouselItemHtml = `
       <h4 class="carousel-section__container__list__item__title">${carouselItem.title}</h4>
       <img src="img/${carouselItem.imgName}" class="carousel-section__container__list__item__image"${carouselItem.imgName}></img>
@@ -78,10 +76,89 @@ function getContactFormData(form) {
   return Object.fromEntries(contactFormData)
 }
 
-document.querySelector('#contactForm').addEventListener('submit', (event) => {
+
+const form = document.querySelector('#contactForm');
+const inputForm = document.querySelectorAll('.contact__container__user-data__form__item')
+
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = getContactFormData(event.target);
   // console.log(event);
   console.log(data);
   httpPost('applications', JSON.stringify(data));
+})
+
+// WALIDACJA FORMULARZA - A//
+
+form.addEventListener('submit', () => {
+  inputForm.forEach
+  console.log(inputForm)
+  if (inputForm.value.length !== 0){
+    form.submit();
+  } else {
+    alert("Wypełnij poprawnie wszystkie pola");
+  };
+})
+
+async function addClients(cliendId) {
+  const clientList = document.querySelector('.client-list__table__body');
+
+  // const applicationslItems = await httpGet('applications/1');
+    const applicationslItem = await httpGet(`applications/${cliendId}`);
+    const tableRow = document.createElement('tr');
+  let data = `
+  <td>${applicationslItem.fullName}</td>
+        <td>${applicationslItem.email}</td>
+        <td>${applicationslItem.phoneNumber}</td>
+        <td>${applicationslItem.message}</td>
+        <td>${applicationslItem.id}</td>
+`;
+
+
+
+  applicationslItem.roles.forEach(role => {
+    console.log(role)
+    // clientList.appendChild(`<td>${role.value}</td>`)
+    data += `<td>${role.value}</td>`
+  })
+
+  tableRow.innerHTML = data;
+
+  console.log(tableRow)
+
+  clientList.appendChild(tableRow);
+
+}
+
+
+
+
+const addButton = document.querySelector('.client-list__add-button')
+
+let clientId = 1
+
+const applicationsList = await httpGet('applications');
+
+function getUserRoles() {
+  return applicationsList.map(({ roles }) => {
+    console.log(roles)
+    return roles;
+  })
+}
+
+const userRoles = getUserRoles();
+
+console.log(applicationsList, 'applicationsList')
+
+console.log(userRoles, 'userRoles')
+
+addButton.addEventListener('click', () => {
+  console.log(applicationsList)
+  if(clientId > applicationsList.length) {
+    return;
+  } else {
+    addClients(clientId)
+  }
+
+  clientId++;
 })
